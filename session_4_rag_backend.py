@@ -13,7 +13,7 @@ import os
 import pdfplumber
 import google.generativeai as genai
 from typing import List, Dict, Tuple, Optional, Any, Union
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_community.vectorstores import Chroma
 
