@@ -85,3 +85,11 @@ Reuse saved models, data, results and checks. Do not repeat final experiments ju
 charts or prose. A new method prompted by these results needs new held-out cases. Rebuild the
 source ZIP only after changed deliverables. Never claim mock/offline checks as cloud calls or AI
 review as independent human assessment. User budget remains zero.
+
+## Latest owner direction — 2026-11-06
+Owner explicitly selected: complete the application and remove the paper from the portfolio.
+Do not continue research-paper expansion unless requested again. The portfolio entry now focuses
+on the completed local document-comparison/review/decision/export workflow; paper status, pilot
+metrics and research-results link were removed. Source research files remain preserved, with
+their original honest limitations. Portfolio source commit: b2286a0 in adityahaa/adityahaa.github.io.
+No live DecisionLens app deployment is authorized.
