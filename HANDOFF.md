@@ -7,7 +7,9 @@ Updated 2026-11-05, Asia/Kolkata. Start here when the user says continue.
 - Original commit: 7eedad4fe46033fb1951b9cb6d9bf8d1c96f63dc.
 - Full original Git history remains in .git and history/original-rag-chatbot.bundle.
 - Unchanged original code is in legacy/; docs/ORIGINAL_* preserves prior documentation.
-- Repository publication authorized 2026-11-05: upload the complete upgrade to adityahaa/Rag_chatbot.
+- Published 2026-11-05 to https://github.com/adityahaa/Rag_chatbot, main branch.
+- Complete upgrade commit: 569d1a5634de228a5e54c13ea9cc5877407f6f3a; all 98 uploaded file blobs verified against local Git objects.
+- GitHub connector write returned 403; the configured Git credential manager successfully pushed the fast-forward update. No sign-in or key sharing was needed.
 - No live deployment or paper submission is authorized or performed.
 - Prepared environment: ../../work/.venv; models are already in models/ (both public checkpoints).
 - Start-Here.cmd or Start.ps1 uses this prepared environment; on another computer run Setup.ps1.
