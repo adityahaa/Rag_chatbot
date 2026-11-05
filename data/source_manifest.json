@@ -1,0 +1,328 @@
+{
+  "access_date": "2026-11-04",
+  "rag_revision": "39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3",
+  "sources": [
+    {
+      "url": "https://prod-comp-shopping-dataset.s3.us-west-2.amazonaws.com/README.md",
+      "path": "aws/README.md",
+      "sha256": "b46d0ef801a9c0cc2cf88d5fac71fc329e18aa7de46ac9598f3dd12cbfae975b",
+      "bytes": 3340,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://prod-comp-shopping-dataset.s3.us-west-2.amazonaws.com/final_prodcomp_dataset_cleaned.tsv",
+      "path": "aws/products.tsv",
+      "sha256": "a7c1b0ddf64192704143816a59b7b198259d19818cd132d6c3064f23a82527d6",
+      "bytes": 4718630,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/LICENSE",
+      "path": "rag/LICENSE",
+      "sha256": "98800da81937e7e782491cd00623c39f6958cf031e36441f9ed604997921a140",
+      "bytes": 1066,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/README.md",
+      "path": "rag/README.md",
+      "sha256": "06ecad255d0d531a88df6d77542a939c2f115ab385b908f3a2ef337043364b43",
+      "bytes": 5639,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/bechmark/bechmark-agentic-references/Dataset categories - queries.csv",
+      "path": "rag/bechmark/bechmark-agentic-references/Dataset categories - queries.csv",
+      "sha256": "58be4e8ebe96147ab63b159b3166357ad905989023956038ed563f9b88c2d24e",
+      "bytes": 526122,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/bechmark/bechmark-agentic-references/parsed-chunks-less-tokens/cloudway_optimised_prompt_chunks.json",
+      "path": "rag/bechmark/bechmark-agentic-references/parsed-chunks-less-tokens/cloudway_optimised_prompt_chunks.json",
+      "sha256": "9340544c07299e8423a6c66397d66abee59d4f25d5f513fa282200ff49f195c8",
+      "bytes": 721749,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/bechmark/bechmark-agentic-references/parsed-chunks/cloudway_prompt_chunks.json",
+      "path": "rag/bechmark/bechmark-agentic-references/parsed-chunks/cloudway_prompt_chunks.json",
+      "sha256": "5aec20c9a5489a7861d5bd5a7b2a4bbbd4066b2bf7323b7175ce1cdec0ba8754",
+      "bytes": 132935,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/bechmark/bechmark-agentic-references/readme.md",
+      "path": "rag/bechmark/bechmark-agentic-references/readme.md",
+      "sha256": "4ddcfd5112a8983ea199d09b5b573c4ee3fb483a4ca5e5a0575c38d8cf0ef488",
+      "bytes": 3684,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/ Fine-Dining Menus.md",
+      "path": "rag/datasets/CloudWay-24/md/ Fine-Dining Menus.md",
+      "sha256": "4ad22d3178f11a61ab8b8528bc22cc1614436f1453c41bdc35344a2b3647cbe3",
+      "bytes": 3241,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Airbus A350.md",
+      "path": "rag/datasets/CloudWay-24/md/Airbus A350.md",
+      "sha256": "679b6625ce925e7533f15f7b2661d69f65932fe8e9c14022020f5096ee95b419",
+      "bytes": 2540,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Airbus A380.md",
+      "path": "rag/datasets/CloudWay-24/md/Airbus A380.md",
+      "sha256": "f96f49ebd4a5f085afe446448bdb2b1e8724d3c0d0a29a69d27fa4ca443e1c02",
+      "bytes": 2892,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Armed Forces Discount Program.md",
+      "path": "rag/datasets/CloudWay-24/md/Armed Forces Discount Program.md",
+      "sha256": "8d4635818eb85dc30c352fc7b8bfc0328e23a96c23965c609b5593917a92b280",
+      "bytes": 2390,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Awards & Recognitions.md",
+      "path": "rag/datasets/CloudWay-24/md/Awards & Recognitions.md",
+      "sha256": "0bdc0568959f5429024fc04360d90a01b09d9087e264f9e05e76ae122fb71d86",
+      "bytes": 1758,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Baggage Allowance.md",
+      "path": "rag/datasets/CloudWay-24/md/Baggage Allowance.md",
+      "sha256": "7b74f1eece94d2fc2c86a450d157efbd1e5f1942b2dc7cebd203009a0ab7b7e7",
+      "bytes": 2749,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Boarding Process.md",
+      "path": "rag/datasets/CloudWay-24/md/Boarding Process.md",
+      "sha256": "ba5d17bf76736a7c2787bc5e99abd065251f2d3191b7e3e0605aa3ce19d857ad",
+      "bytes": 2988,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Boeing 787 Dreamliner.md",
+      "path": "rag/datasets/CloudWay-24/md/Boeing 787 Dreamliner.md",
+      "sha256": "53aa56685bea75717eba64411b14109fc0ba125f4199c56b5ec3fb33949755a9",
+      "bytes": 2601,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Cancel Your Booking.md",
+      "path": "rag/datasets/CloudWay-24/md/Cancel Your Booking.md",
+      "sha256": "b6e88dd3924abd4185e226cee0069f8adbe9b37c8c1629ea5e1348345a45c2c5",
+      "bytes": 2184,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Careers at CloudWay 24.md",
+      "path": "rag/datasets/CloudWay-24/md/Careers at CloudWay 24.md",
+      "sha256": "2f64fb8146b7476f815ca0a9f824994747988e0f034fc2593bcc61094badc456",
+      "bytes": 16688,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Change Your Seat.md",
+      "path": "rag/datasets/CloudWay-24/md/Change Your Seat.md",
+      "sha256": "31ffc85334245082fb5df1af5080867436fa1330f89426da7010860849d02090",
+      "bytes": 2114,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Check Your Visa and Passport Requirements.md",
+      "path": "rag/datasets/CloudWay-24/md/Check Your Visa and Passport Requirements.md",
+      "sha256": "5899ec9435aaea3c11c13f07223e04e67d464ae991316e57849d89b9d9d7aa54",
+      "bytes": 5476,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/CloudWay 24 \u2013 Passenger Rights.md",
+      "path": "rag/datasets/CloudWay-24/md/CloudWay 24 \u2013 Passenger Rights.md",
+      "sha256": "fcb0b0e88f630fd967ca5b5c3b6c8c4909cd1be77ab0f306cef2f7d797b15a89",
+      "bytes": 3252,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Co-brand Credit Cards.md",
+      "path": "rag/datasets/CloudWay-24/md/Co-brand Credit Cards.md",
+      "sha256": "5d13f700e4277c4004e9469cf198999d6a7e46afa042ff3e4695a67ced1a20be",
+      "bytes": 1822,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Damaged Baggage Policy.md",
+      "path": "rag/datasets/CloudWay-24/md/Damaged Baggage Policy.md",
+      "sha256": "5b8f035717f1e84ecdb772f326403559a58860304ad0a1995a552af8ee74ff92",
+      "bytes": 2596,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Dangerous Goods Policy.md",
+      "path": "rag/datasets/CloudWay-24/md/Dangerous Goods Policy.md",
+      "sha256": "d85af175718ef8857181786707fde92f395459e7f9351d55ea0f482504b51eb1",
+      "bytes": 4483,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Delayed Baggage.md",
+      "path": "rag/datasets/CloudWay-24/md/Delayed Baggage.md",
+      "sha256": "77b5e814402c68e5354e4e16df7c0e2b5fca383fc7aa8e66d76520bc0c95d7d5",
+      "bytes": 2255,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Employee Free Tickets & Discounts Policy.md",
+      "path": "rag/datasets/CloudWay-24/md/Employee Free Tickets & Discounts Policy.md",
+      "sha256": "10a00869d2a52838645b3bc69df4f9108e13e44b74c0d9f137db131c8e8cf37c",
+      "bytes": 2360,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Employee Insurance Policy.md",
+      "path": "rag/datasets/CloudWay-24/md/Employee Insurance Policy.md",
+      "sha256": "8c6446b0eb9f120b1a95dd9ea825e9ada46f007940922749e011f1623b47dcac",
+      "bytes": 2960,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Feedback or Complaints.md",
+      "path": "rag/datasets/CloudWay-24/md/Feedback or Complaints.md",
+      "sha256": "226d44b4a5588b77db8e003b0be1eba14d026ba26b8f75a029b29a95d37b120f",
+      "bytes": 2429,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Flying with Children.md",
+      "path": "rag/datasets/CloudWay-24/md/Flying with Children.md",
+      "sha256": "9c9d57b9533f35fb259ad4a37faea47574b137449613577b8ae05aee85ad188f",
+      "bytes": 2920,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/How to Book a Flight.md",
+      "path": "rag/datasets/CloudWay-24/md/How to Book a Flight.md",
+      "sha256": "5236c3d8324a9f4709f355f7d2b9f1823d89f2b08920fac01ef7c65b4186e496",
+      "bytes": 2162,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/How to Earn SkyPoints.md",
+      "path": "rag/datasets/CloudWay-24/md/How to Earn SkyPoints.md",
+      "sha256": "f604e201f1e5421ab3ff02ca4b8b10ec466c0aefa385955f6ee826a20c8de659",
+      "bytes": 3000,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Lounge Access.md",
+      "path": "rag/datasets/CloudWay-24/md/Lounge Access.md",
+      "sha256": "de3b0541f5e236d1361f388efed4245170cb51698f9bb711a574ade3a0a66ee5",
+      "bytes": 2442,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Modify Trip Dates.md",
+      "path": "rag/datasets/CloudWay-24/md/Modify Trip Dates.md",
+      "sha256": "7a7f1350853bedcf1e30fb154255b81582320004407fa3982acd1c4d04e4acfd",
+      "bytes": 2191,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Mumbai Inbound & Outbound Flights.md",
+      "path": "rag/datasets/CloudWay-24/md/Mumbai Inbound & Outbound Flights.md",
+      "sha256": "4e075e97da33944282c5be5f7b9cf92fac37e5076d3bd1d15247296e328cb795",
+      "bytes": 21856,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Special Assistance.md",
+      "path": "rag/datasets/CloudWay-24/md/Special Assistance.md",
+      "sha256": "ee9ff37cabc8b5d8034f647d5d504731d793ea3be78fccb23939710f910c5ffe",
+      "bytes": 2724,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Special Baggage Policy.md",
+      "path": "rag/datasets/CloudWay-24/md/Special Baggage Policy.md",
+      "sha256": "a2b6b1fcdc606e7b49efaef21acc868e2518c5fbf6512bc9a727de91dde905d9",
+      "bytes": 3686,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Staff (Pilots and Cabin Crew) Cab Policy.md",
+      "path": "rag/datasets/CloudWay-24/md/Staff (Pilots and Cabin Crew) Cab Policy.md",
+      "sha256": "8a57d7b9e312d4a95c8d03334a118400d97d86fbd58568c1286c1a2bbb2e4231",
+      "bytes": 2711,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Staff Accommodation Policy.md",
+      "path": "rag/datasets/CloudWay-24/md/Staff Accommodation Policy.md",
+      "sha256": "5ee99fae54c7375ba7c68a4c19a948dcbd6b4e1b523511815ada638e8dc8aed6",
+      "bytes": 2160,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Staff Expense Claim Procedure.md",
+      "path": "rag/datasets/CloudWay-24/md/Staff Expense Claim Procedure.md",
+      "sha256": "c4dfd7a62df9ed3d342e309306c490fbedfa50c63d03f7c945e6de709b06a9ca",
+      "bytes": 2586,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Student Offers.md",
+      "path": "rag/datasets/CloudWay-24/md/Student Offers.md",
+      "sha256": "f0aebebf3eac4e131535ac98f3721abfad9d4d994950258eb8db85c4d972ea82",
+      "bytes": 2551,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Trainee Pilot Programme.md",
+      "path": "rag/datasets/CloudWay-24/md/Trainee Pilot Programme.md",
+      "sha256": "96a1347f9ef1584d822fca0da3d59cc960920f1a3301a2b3fc9857a4f49b0cde",
+      "bytes": 2132,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Upgrade Your Seat.md",
+      "path": "rag/datasets/CloudWay-24/md/Upgrade Your Seat.md",
+      "sha256": "a6f7d35ed784a61ae45d8bce276fb6261bbb596b5619b89c630760a92739b7cf",
+      "bytes": 2466,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Visa and Passport Requirements Asia.md",
+      "path": "rag/datasets/CloudWay-24/md/Visa and Passport Requirements Asia.md",
+      "sha256": "a07fb10481213eae93fcf9bef421af14f79745273a466054414d83bd2151edb6",
+      "bytes": 3383,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/Web Check-In Guide.md",
+      "path": "rag/datasets/CloudWay-24/md/Web Check-In Guide.md",
+      "sha256": "11f9f83a6252fd1fbc484f1624693cac18db9fd51602c9844ac2fb40c8a24c95",
+      "bytes": 2470,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/CloudWay-24/md/ravelling with Pets.md",
+      "path": "rag/datasets/CloudWay-24/md/ravelling with Pets.md",
+      "sha256": "19468eea467ef649b8106d42aac977efc4db7ee0c9bb46a272511d4b7a58b6f7",
+      "bytes": 3120,
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/udayallu/RAG-Multi-Corpus/39071af3f4dd25e59f5c59a6f9b6e8e99cd643b3/datasets/Dataset categories - queries_01122025.csv",
+      "path": "rag/datasets/Dataset categories - queries_01122025.csv",
+      "sha256": "48c319a45a911cc3973e3f4e8ed34eeb39fa2eb49331a04f1433552d541c5457",
+      "bytes": 606203,
+      "accessed": "2026-11-04"
+    }
+  ]
+}

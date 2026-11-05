@@ -1,0 +1,37 @@
+Product,Attribute,Value,Status,Confirmed,Source files,Source dates
+Sprintly,Price,"USD 12 per user/month, annual billing",documented,False,sprintly.md,2026-10-01
+ForgeFlow,Price,"USD 20 per user/month, monthly billing",reviewed,True,forgeflow.md; forgeflow-addendum.md,2026-10-01; 2026-10-15
+OrbitDesk,Price,"USD 9 per user/month, annual billing",documented,False,orbitdesk.md,2026-10-01
+Beacon,Price,"USD 15 per user/month, monthly billing",documented,False,beacon-synthetic.pdf,unknown
+Sprintly,SSO,Available on Enterprise only,documented,False,sprintly.md,2026-10-01
+ForgeFlow,SSO,SAML SSO included,documented,False,forgeflow.md,2026-10-01
+OrbitDesk,SSO,,missing,False,,
+Beacon,SSO,SAML included,documented,False,beacon-synthetic.pdf,unknown
+Sprintly,Data residency,US region,documented,False,sprintly.md,2026-10-01
+ForgeFlow,Data residency,"EU or US, chosen at workspace creation",documented,False,forgeflow.md,2026-10-01
+OrbitDesk,Data residency,,missing,False,,
+Beacon,Data residency,EU,documented,False,beacon-synthetic.pdf,unknown
+Sprintly,Support,"Email, weekdays 09:00–17:00 UTC",documented,False,sprintly.md,2026-10-01
+ForgeFlow,Support,"Email and chat, 24 hours on weekdays",documented,False,forgeflow.md; forgeflow-addendum.md,2026-10-01; 2026-10-15
+OrbitDesk,Support,Community forum,documented,False,orbitdesk.md,2026-10-01
+Beacon,Support,Email on weekdays,documented,False,beacon-synthetic.pdf,unknown
+Sprintly,Intended users,Small project teams,documented,False,sprintly.md,2026-10-01
+ForgeFlow,Intended users,Engineering teams with compliance requirements,documented,False,forgeflow.md,2026-10-01
+OrbitDesk,Intended users,Early-stage teams,documented,False,orbitdesk.md,2026-10-01
+Beacon,Intended users,Small engineering teams,documented,False,beacon-synthetic.pdf,unknown
+Sprintly,Limitations,Team plan excludes audit log export,documented,False,sprintly.md,2026-10-01
+ForgeFlow,Limitations,Data region cannot be changed in place,documented,False,forgeflow.md,2026-10-01
+OrbitDesk,Limitations,Up to 10 active projects,documented,False,orbitdesk.md,2026-10-01
+Beacon,Limitations,Maximum 20 projects,documented,False,beacon-synthetic.pdf,unknown
+Sprintly,SLA,,missing,False,,
+ForgeFlow,SLA,99.9% monthly uptime; credits subject to terms,documented,False,forgeflow.md,2026-10-01
+OrbitDesk,SLA,,missing,False,,
+Beacon,SLA,,missing,False,,
+Sprintly,Integrations,"GitHub, Slack",documented,False,sprintly.md,2026-10-01
+ForgeFlow,Integrations,"GitHub, GitLab, Slack",documented,False,forgeflow.md,2026-10-01
+OrbitDesk,Integrations,GitHub,documented,False,orbitdesk.md,2026-10-01
+Beacon,Integrations,,missing,False,,
+Sprintly,Contract,12 months; annual invoice,documented,False,sprintly.md,2026-10-01
+ForgeFlow,Contract,Monthly; cancel at renewal,documented,False,forgeflow.md,2026-10-01
+OrbitDesk,Contract,12 months; annual invoice,documented,False,orbitdesk.md,2026-10-01
+Beacon,Contract,,missing,False,,

@@ -1,0 +1,11 @@
+{
+  "run": "20261104T204725_905751Z",
+  "validated_method_cases": 755,
+  "split_group_overlap": 0,
+  "checks": [
+    "Saved retrieved-ID membership recomputed against gold IDs/names",
+    "Recall denominators and means reconstructed",
+    "Dev/eval evidence groups disjoint"
+  ],
+  "limits": "Does not validate semantic relevance labels, factual correctness, independence of source identities, or generalization."
+}

@@ -1,17 +1,37 @@
-# PDF RAG chatbot technical report
+# DecisionLens implementation report
 
-## Problem and pipeline
+The upgraded app separates local parsing, retrieval, literal extraction, user review and
+decision calculations. `decisionlens/documents.py` handles byte inputs, limits, provenance and
+page-preserving chunks. `retrieval.py` implements cosine MiniLM search, BM25 and RRF hybrid.
+`evidence.py` extracts labelled facts and retains disagreement sets. `decisions.py` computes
+conditional utility and coverage and generates a source-traceable Markdown brief.
+`server.py` exposes a loopback FastAPI service; `static/` is a responsive, dependency-free
+browser interface. The original two module names remain usable local entry points, while
+unchanged original code is archived in `legacy/`.
 
-The application answers document questions with an inspectable retrieved context. Streamlit coordinates local pdfplumber extraction, recursive character splitting (1,000 characters, overlap 200), Google embeddings, persistent Chroma indexing, similarity retrieval, and direct Gemini prompt invocation. Default k is 3 and UI temperature is 0.2. Chunk labels identify retrieved positions, not verified document citations.
+Model files are public Apache-2.0 pretrained checkpoints downloaded once with explicit
+revisions and SHA-256 verification. Runtime requires local files and never calls a billing
+service. In-memory normalized vectors replace shared Chroma persistence. All source links
+are validated as HTTP(S) metadata, not fetched. Session workspaces expire after inactivity.
+The original API-key global state and temporary-file paths are absent from the supported app.
 
-## Data and experimental setup
+Extraction is deliberately literal. The UI supports manual assertions with review notes and
+keeps original source snippets. A text mismatch is a review flag, not a semantic contradiction
+verdict. Candidate answer excerpts can be insufficient or irrelevant. Optional FLAN generation
+uses the same local checkpoint evaluated in the pilot and is labelled experimental because
+its recorded output quality was inadequate.
 
-Users provide PDFs. No bundled corpus, labeled question set, baseline run, or measured result exists. Extraction supports machine-readable text; scanned inputs need an OCR stage that is not implemented. Conversation history is visual session state and is not included in model prompts. Metadata dictionaries constructed in the UI are not passed to store_embeddings, limiting source traceability.
+User ratings are explicit utility judgments. Only reviewed, rated criteria enter the weighted
+mean; coverage exposes missing eligible weight. No hidden unit or currency normalization,
+automatic winner, learned confidence or procurement guarantee is implemented. Edited briefs
+are saved in memory and exported as Markdown, while comparison CSV is formula-escaped and
+evidence JSON includes source records. Changing evidence or priorities regenerates the brief.
 
-## Evaluation methodology
+Research includes a frozen protocol, conservative schema eligibility, evidence-group splits,
+five retrieval comparisons and a local generation feasibility check. The all-document matrix
+is not the same as the top-k retrieval experimental extractor. Results and limitations must
+be interpreted at their actual unit: attribute snippet, source filename or synthetic cell.
 
-A future evaluation should use public/synthetic PDFs with answer spans and unanswerable questions. Record document hashes, model/package versions, chunk boundaries, k, and prompt. Measure retrieval Recall@k against labeled spans, answer correctness, source attribution, and abstention on unanswerable items. Compare vector retrieval with keyword retrieval and context-free generation on the same questions. These comparisons are proposed, not executed; no accuracy values are asserted.
-
-## Reproduction blockers and limitations
-
-Follow the root README for the intended launch. The legacy langchain.text_splitter import has been replaced with langchain_text_splitters and its direct requirement. Unpinned packages still make complete installation compatibility uncertain. The archived experimental Gemini generation ID and embedding ID need provider validation. API configuration is process-wide; persistence is shared and is not isolated by user. Failed document processing can leave temporary files. Prompt instructions do not enforce groundedness or prevent prompt injection. Use approved public/synthetic content only. See [verification record](VERIFICATION.md) for executed checks; no live provider answer was generated in this review.
+Before shared deployment: add authentication, session/storage authorization, encrypted durable
+storage, retention controls, worker isolation, quotas and abuse handling; then test the complete
+hosted workflow. Current host/origin restrictions intentionally keep this edition local.

@@ -1,0 +1,13 @@
+Recorded 2026-11-05, Asia/Kolkata.
+Command: python -m pytest -q
+Result: 19 passed, 1 warning in 2.22s
+Warning: upstream starlette.testclient AnyIO BlockingPortal alias deprecation.
+Command: python -m pip check
+Result: No broken requirements found.
+Command: node --check static/app.js
+Result: passed (exit 0).
+Command: git bundle verify history/original-rag-chatbot.bundle
+Result: complete original history, bundle is okay.
+Research verification: 755 saved method/case retrieval memberships and aggregate recall
+means independently recomputed from saved IDs; zero development/evaluation group overlap.
+No external cloud provider or independent human evaluation is implied by these checks.

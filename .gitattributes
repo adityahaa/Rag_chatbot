@@ -1,0 +1,6 @@
+# Preserve exact source/evidence bytes and recorded SHA-256 hashes across Windows clones.
+* -text
+*.pdf binary
+*.png binary
+*.jpg binary
+*.bundle binary
