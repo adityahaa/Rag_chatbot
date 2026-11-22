@@ -2,6 +2,11 @@
 
 A Streamlit prototype for asking questions over uploaded PDFs using Gemini embeddings, Chroma similarity retrieval, and a Gemini chat model. The objective is to show the retrieved context beside answers so users can inspect the supporting text.
 
+
+## Contents
+
+[Implemented pipeline](#implemented-pipeline) · [Setup and execution](#setup-and-execution) · [Reproduction status](#reproduction-status) · [Limitations](#limitations) · [Attribution](#attribution) · [From a PDF to an inspectable answer](#from-a-pdf-to-an-inspectable-answer)
+
 ## Implemented pipeline
 
 1. Extract text locally with `pdfplumber`.
@@ -38,3 +43,43 @@ Scanned PDFs have no OCR path. File source metadata is assembled in the interfac
 Maintained in Aditya Hambire's repository; existing Git history records contributions. Libraries and model services retain their respective rights. No publication or paper reproduction is claimed.
 
 Current checks and unresolved prerequisites: [verification record](docs/VERIFICATION.md).
+
+## From a PDF to an inspectable answer
+
+Document questions require locating relevant passages before composing a response. The application gives this task a visible workflow. The user processes a group of PDFs once, asks questions through the chat interface, and opens the source-context expander to inspect what the generator received.
+
+```mermaid
+flowchart LR
+  A[Uploaded PDFs] --> B[Temporary files]
+  B --> C[pdfplumber text extraction]
+  C --> D[Overlapping text chunks]
+  D --> E[Google embeddings]
+  E --> F[(Persistent Chroma collection)]
+  G[Question] --> F
+  F --> H[Top-k passages]
+  H --> I[Context-only Gemini prompt]
+  I --> J[Answer and context display]
+```
+
+### Indexing and retrieval details
+
+`process_documents` writes each upload to a temporary PDF and calls `parse_pdf`, which concatenates extractable page text. `create_document_chunks` prefers paragraph, line and word boundaries before falling back to character boundaries. The overlap keeps some text available on both sides of a split, at the cost of indexing repeated material.
+
+`store_embeddings` calls `Chroma.from_texts`, which generates and stores embeddings. The separate `embed_documents` helper is a connectivity probe and is not the bulk indexing stage in this UI. The retriever uses similarity search with the user-selected `k`, from 1 through 10. Increasing `k` supplies more context and can also admit less relevant passages.
+
+### Prompt and interface behavior
+
+`get_context_from_chunks` labels retrieved passages `[Chunk 1]`, `[Chunk 2]` and so forth. `query_with_full_context` joins them into a prompt instructing the model to answer from the context or abstain. Generation uses the supplied temperature, `top_p=0.95`, and a 1,024-token output limit. The interface stores question/answer pairs and context for display.
+
+The implemented output is therefore an answer together with the exact retrieved text supplied to generation. The repository's reproducible evidence currently establishes syntax and the source-defined pipeline. A provider-backed answer-quality result requires accessible models and a labeled question set. The evaluation plan in the report proposes retrieval Recall@k, correctness and abstention checks on the same documents.
+
+### File guide and next steps
+
+| File | Role |
+|---|---|
+| `rag_streamlit.py` | Configuration, multi-file processing, chat and context display |
+| `session_4_rag_backend.py` | PDF parsing, splitting, embedding, retrieval and generation |
+| `requirements.txt` | Streamlit, Google/LangChain integration, Chroma and PDF dependencies |
+| `docs/TECHNICAL_REPORT.md` | Evaluation design and interpretation |
+
+Source/page metadata propagation, isolated collections and a frozen PDF QA set would make the next iteration easier to evaluate and operate. They directly address passage traceability, document separation and answer verification.
