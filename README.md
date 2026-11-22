@@ -1,11 +1,14 @@
 # DecisionLens
 
-**Evidence before decisions.** A free, local product-comparison and vendor-decision workspace,
-upgraded from Aditya Hambire's [RAG Chatbot](https://github.com/adityahaa/Rag_chatbot).
-Upload documents, inspect the evidence behind each value, review gaps and differences,
-set priorities, and export an editable decision brief. The user makes the final decision.
+Local document-based vendor comparison with traceable evidence, weighted scoring and editable decision briefs.
 
-![Actual local application](docs/dashboard.jpg)
+Comparing vendors means reconciling claims spread across documents, checking what supports each value and deciding which requirements matter. DecisionLens brings those steps into a local workspace. Upload documents, inspect literal source excerpts, review comparison cells, set priorities and user ratings, then export a brief that records the evidence behind the assessment.
+
+Hybrid, semantic and keyword retrieval help locate candidate passages. Weighted scoring includes confirmed, reviewed cells with user ratings and reports evidence coverage alongside the score. The current application evolved from the RAG Chatbot retained in this repository’s history and `legacy/` source.
+
+[Local setup](#run-locally-on-windows) · [Workflow](#try-the-workflow) · [Architecture](#architecture-and-source-navigation) · [Pilot results](research/RESULTS.md) · [Verification](docs/VERIFICATION.md)
+
+![DecisionLens local application with document evidence and comparison workflow](docs/dashboard.jpg)
 
 ## Run locally on Windows
 
