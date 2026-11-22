@@ -36,7 +36,7 @@ Open the printed local URL, enter a Gemini key in the sidebar, select **Set API 
 
 ## Reproduction status
 
-No public demo, labeled QA dataset, or retrieval/answer-quality benchmark is supplied. [Technical report](docs/TECHNICAL_REPORT.md) documents verification and blockers. Dependencies are unpinned. The text splitter import now uses its dedicated langchain-text-splitters package; full dependency integration remains unverified. Default model IDs are `models/text-embedding-004` and `gemini-2.0-flash-thinking-exp-01-21`; successful current-provider calls have not been verified. Compatible packages, a valid key, and accessible model IDs are required before claiming an end-to-end run.
+No public demo, labeled QA dataset, or retrieval/answer-quality benchmark is supplied. [Technical report](TECHNICAL_REPORT.md) documents verification and blockers. Dependencies are unpinned. The text splitter import now uses its dedicated langchain-text-splitters package; full dependency integration remains unverified. Default model IDs are `models/text-embedding-004` and `gemini-2.0-flash-thinking-exp-01-21`; successful current-provider calls have not been verified. Compatible packages, a valid key, and accessible model IDs are required before claiming an end-to-end run.
 
 ## Limitations
 
@@ -46,7 +46,7 @@ Scanned PDFs have no OCR path. File source metadata is assembled in the interfac
 
 Maintained in Aditya Hambire's repository; existing Git history records contributions. Libraries and model services retain their respective rights. No publication or paper reproduction is claimed.
 
-Current checks and unresolved prerequisites: [verification record](docs/VERIFICATION.md).
+Current checks and unresolved prerequisites: [verification record](VERIFICATION.md).
 
 ## From a PDF to an inspectable answer
 
