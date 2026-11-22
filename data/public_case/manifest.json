@@ -1,0 +1,11 @@
+{
+  "accessed": "2026-11-05",
+  "reviewer": "AI coding/research collaborator; not independent human ground truth",
+  "license_policy": "Own short factual paraphrases and links only. Original pages are not redistributed. GitHub Docs has its own reuse terms; no general reuse license assumed for pricing pages.",
+  "sources": [
+    {"file":"github-enterprise-notes.md","product":"GitHub Enterprise Cloud","source_url":"https://docs.github.com/en/get-started/learning-about-github/githubs-plans","source_date":"","publication_date_status":"Unknown"},
+    {"file":"gitlab-premium-notes.md","product":"GitLab.com Premium","source_url":"https://about.gitlab.com/pricing/","source_date":"","publication_date_status":"Unknown"},
+    {"file":"gitlab-sso-notes.md","product":"GitLab.com Premium","source_url":"https://docs.gitlab.com/user/group/saml_sso/","source_date":"","publication_date_status":"Unknown"}
+  ],
+  "access_failure": "The initial docs.gitlab.com/subscriptions/gitlab_com/ page redirected to an inaccessible authentication endpoint on 2026-11-04. Accessible pricing and SAML pages were used instead. No authentication was bypassed."
+}
